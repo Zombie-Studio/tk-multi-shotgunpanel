@@ -86,7 +86,7 @@ class GeneralActions(HookBaseClass):
         if "task_to_rdy" in actions:
             action_instances.append(
                 {
-                    "name": "task_to_rev",
+                    "name": "task_to_rdy",
                     "params": None,
                     "group": "Update task",
                     "caption": "Set to Ready to Start",
