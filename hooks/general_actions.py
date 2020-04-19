@@ -72,6 +72,61 @@ class GeneralActions(HookBaseClass):
                 }
             )
 
+        if "task_to_rev" in actions:
+            action_instances.append(
+                {
+                    "name": "task_to_rev",
+                    "params": None,
+                    "group": "Pending Review",
+                    "caption": "Set to Pending Review",
+                    "description": "Set the task status to Pending Review.",
+                }
+            )
+
+        if "task_to_rdy" in actions:
+            action_instances.append(
+                {
+                    "name": "task_to_rev",
+                    "params": None,
+                    "group": "Ready to Start",
+                    "caption": "Set to Ready to Start",
+                    "description": "Set the task status to Ready to Start.",
+                }
+            )
+
+        if "task_to_hld" in actions:
+            action_instances.append(
+                {
+                    "name": "task_to_hld",
+                    "params": None,
+                    "group": "On Hold",
+                    "caption": "Set to On Hold",
+                    "description": "Set the task status to On Hold.",
+                }
+            )
+
+        if "task_to_cmpt" in actions:
+            action_instances.append(
+                {
+                    "name": "task_to_cmpt",
+                    "params": None,
+                    "group": "Complete",
+                    "caption": "Set to Complete",
+                    "description": "Set the task status to Complete.",
+                }
+            )
+
+        if "task_to_adjt" in actions:
+            action_instances.append(
+                {
+                    "name": "task_to_adjt",
+                    "params": None,
+                    "group": "Adjust",
+                    "caption": "Set to Adjust",
+                    "description": "Set the task status to Adjust.",
+                }
+            )
+
         if "quicktime_clipboard" in actions:
 
             if sg_data.get("sg_path_to_movie"):
@@ -217,6 +272,21 @@ class GeneralActions(HookBaseClass):
 
         elif name == "task_to_ip":
             app.shotgun.update("Task", sg_data["id"], {"sg_status_list": "ip"})
+
+        elif name == "task_to_rev":
+            app.shotgun.update("Task", sg_data["id"], {"sg_status_list": "rev"})
+
+        elif name == "task_to_rdy":
+            app.shotgun.update("Task", sg_data["id"], {"sg_status_list": "rdy"})
+
+        elif name == "task_to_hld":
+            app.shotgun.update("Task", sg_data["id"], {"sg_status_list": "hld"})
+
+        elif name == "task_to_cmpt":
+            app.shotgun.update("Task", sg_data["id"], {"sg_status_list": "cmpt"})
+
+        elif name == "task_to_adjt":
+            app.shotgun.update("Task", sg_data["id"], {"sg_status_list": "adjt"})
 
         elif name == "quicktime_clipboard":
             self._copy_to_clipboard(sg_data["sg_path_to_movie"])
