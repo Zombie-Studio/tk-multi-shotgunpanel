@@ -77,7 +77,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_rev",
                     "params": None,
-                    "group": "Pending Review",
+                    "group": "Update task",
                     "caption": "Set to Pending Review",
                     "description": "Set the task status to Pending Review.",
                 }
@@ -88,7 +88,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_rev",
                     "params": None,
-                    "group": "Ready to Start",
+                    "group": "Update task",
                     "caption": "Set to Ready to Start",
                     "description": "Set the task status to Ready to Start.",
                 }
@@ -99,7 +99,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_hld",
                     "params": None,
-                    "group": "On Hold",
+                    "group": "Update task",
                     "caption": "Set to On Hold",
                     "description": "Set the task status to On Hold.",
                 }
@@ -110,7 +110,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_cmpt",
                     "params": None,
-                    "group": "Complete",
+                    "group": "Update task",
                     "caption": "Set to Complete",
                     "description": "Set the task status to Complete.",
                 }
@@ -121,7 +121,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_adjt",
                     "params": None,
-                    "group": "Adjust",
+                    "group": "Update task",
                     "caption": "Set to Adjust",
                     "description": "Set the task status to Adjust.",
                 }
