@@ -66,7 +66,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_ip",
                     "params": None,
-                    "group": "Update task",
+                    "group": "Task status",
                     "caption": "Set to In Progress",
                     "description": "Set the task status to In Progress.",
                 }
@@ -77,7 +77,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_rev",
                     "params": None,
-                    "group": "Update task",
+                    "group": "Task status",
                     "caption": "Set to Pending Review",
                     "description": "Set the task status to Pending Review.",
                 }
@@ -88,7 +88,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_rdy",
                     "params": None,
-                    "group": "Update task",
+                    "group": "Task status",
                     "caption": "Set to Ready to Start",
                     "description": "Set the task status to Ready to Start.",
                 }
@@ -99,7 +99,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_hld",
                     "params": None,
-                    "group": "Update task",
+                    "group": "Task status",
                     "caption": "Set to On Hold",
                     "description": "Set the task status to On Hold.",
                 }
@@ -110,7 +110,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_cmpt",
                     "params": None,
-                    "group": "Update task",
+                    "group": "Task status",
                     "caption": "Set to Complete",
                     "description": "Set the task status to Complete.",
                 }
@@ -121,7 +121,7 @@ class GeneralActions(HookBaseClass):
                 {
                     "name": "task_to_adjt",
                     "params": None,
-                    "group": "Update task",
+                    "group": "Task status",
                     "caption": "Set to Adjust",
                     "description": "Set the task status to Adjust.",
                 }
